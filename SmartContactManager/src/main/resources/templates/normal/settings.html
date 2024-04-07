@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::Layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title th:text="{title}">Setting</title>
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="card">
+				<div class="card-body">
+					<h1 class="font-italic font-weight-light">Change your profile settings</h1>
+					<a type="submit" class="btn btn-primary btn-block mt-3">Change your Password</a>
+					<a type="submit" class="btn btn-primary btn-block mt-2">Forgot password</a>
+					<a type="submit" th:href="@{/logout}" class="btn btn-primary btn-block">Logout</a>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(()=>{
+				$('.item').removeClass('active');
+				$("#setting-link").addClass("active");
+			});
+		</script>
+		
+	</section>
+	
+</body>
+</html>

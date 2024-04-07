@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::Layout(~{::section})">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" th:href="@{/css/about_style.css}">
+	<title th:text="${title}">About</title>
+</head>
+
+<body>
+	<section class="myaboutpage">
+		<div class="about-section text-center">
+			<h1 class="font-weight-light">About Us</h1>
+			<p class="font-italic">Smart Contact Manager helps user to store their contact details in a very effective way and provides a smarter way of handling contacts with fully Authentication and Authorization.</p>
+			<p class="font-italic">We ensure the privacy and security of our client data.</p>
+		</div>
+
+		<h2 style="text-align:center">Our Team</h2>
+		<div class="row mt-5 text-center" style="padding-left: 400px;">
+			<div class="column">
+				<div class="card">
+					<img th:src="@{'/image/founder.jpeg'}" alt="default.png" style="height: 200px; width: 200px;" class="my_profile_picture ml-3 mt-2">
+					<div class="container">
+						<h2>Rajeev Kumar</h2>
+						<p class="title">CEO & Founder</p>
+						<p>Software Developer</p>
+						<p>rajeevpateshwari@gmail.com</p>
+						<p><button class="button">Contact</button></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="column ml-3">
+				<div class="card">
+					<img th:src="@{'/image/cofounder.jpeg'}" alt="default.png" style="height: 200px; width: 200px;" class="my_profile_picture ml-3 mt-2">
+					<div class="container">
+						<h2>Jitendra Kumar</h2>
+						<p class="title">Co-founder</p>
+						<p>Software developer</p>
+						<p>jitendra@gmail.com</p>
+						<p><button class="button">Contact</button></p>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+
+	</section>
+
+</body>
+
+</html>
